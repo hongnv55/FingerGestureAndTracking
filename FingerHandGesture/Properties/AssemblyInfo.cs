@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FingerHandGesture")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Project for Computer Vision course")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FingerHandGesture")]
+[assembly: AssemblyCompany("Team Hieu-Hong-Kien")]
+[assembly: AssemblyProduct("Finger Hand Gesture")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

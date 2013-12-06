@@ -38,6 +38,7 @@
             this.mRatio = new System.Windows.Forms.Label();
             this.mRatioValue = new System.Windows.Forms.TextBox();
             this.mChooseImage = new System.Windows.Forms.Button();
+            this.mTip1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackingImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colorImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mImage)).BeginInit();
@@ -53,6 +54,7 @@
             this.trackingImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.trackingImage.TabIndex = 0;
             this.trackingImage.TabStop = false;
+            this.trackingImage.Visible = false;
             // 
             // colorButton
             // 
@@ -97,12 +99,13 @@
             this.colorImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.colorImage.TabIndex = 16;
             this.colorImage.TabStop = false;
+            this.colorImage.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(514, 9);
+            this.label6.Location = new System.Drawing.Point(106, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(337, 26);
             this.label6.TabIndex = 17;
@@ -111,7 +114,7 @@
             // mImage
             // 
             this.mImage.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.mImage.Location = new System.Drawing.Point(844, 39);
+            this.mImage.Location = new System.Drawing.Point(60, 38);
             this.mImage.Name = "mImage";
             this.mImage.Size = new System.Drawing.Size(435, 419);
             this.mImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -126,6 +129,7 @@
             this.mRatio.Size = new System.Drawing.Size(77, 13);
             this.mRatio.TabIndex = 19;
             this.mRatio.Text = "Distance Ratio";
+            this.mRatio.Visible = false;
             // 
             // mRatioValue
             // 
@@ -133,10 +137,11 @@
             this.mRatioValue.Name = "mRatioValue";
             this.mRatioValue.Size = new System.Drawing.Size(55, 20);
             this.mRatioValue.TabIndex = 20;
+            this.mRatioValue.Visible = false;
             // 
             // mChooseImage
             // 
-            this.mChooseImage.Location = new System.Drawing.Point(1021, 236);
+            this.mChooseImage.Location = new System.Drawing.Point(231, 246);
             this.mChooseImage.Name = "mChooseImage";
             this.mChooseImage.Size = new System.Drawing.Size(85, 23);
             this.mChooseImage.TabIndex = 21;
@@ -144,11 +149,22 @@
             this.mChooseImage.UseVisualStyleBackColor = true;
             this.mChooseImage.Click += new System.EventHandler(this.mChooseImage_Click);
             // 
+            // mTip1
+            // 
+            this.mTip1.AutoSize = true;
+            this.mTip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mTip1.Location = new System.Drawing.Point(136, 460);
+            this.mTip1.Name = "mTip1";
+            this.mTip1.Size = new System.Drawing.Size(50, 24);
+            this.mTip1.TabIndex = 22;
+            this.mTip1.Text = "label";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1291, 519);
+            this.ClientSize = new System.Drawing.Size(539, 541);
+            this.Controls.Add(this.mTip1);
             this.Controls.Add(this.mChooseImage);
             this.Controls.Add(this.mRatioValue);
             this.Controls.Add(this.mRatio);
@@ -182,6 +198,7 @@
         private System.Windows.Forms.Label mRatio;
         private System.Windows.Forms.TextBox mRatioValue;
         private System.Windows.Forms.Button mChooseImage;
+        private System.Windows.Forms.Label mTip1;
     }
 }
 
